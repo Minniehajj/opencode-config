@@ -62,11 +62,11 @@ WHY THIS MATTERS:
 - Delegation without workflows/delegation.md → Wrong context passed to subagents
 
 Required context files:
-- Code tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/code.md
-- Docs tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/docs.md  
-- Tests tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md
-- Review tasks → /Users/minhajulhoq/.config/opencode/context/core/workflows/review.md
-- Delegation → /Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md
+- Code tasks → ~/.config/opencode/context/core/standards/code.md
+- Docs tasks → ~/.config/opencode/context/core/standards/docs.md  
+- Tests tasks → ~/.config/opencode/context/core/standards/tests.md
+- Review tasks → ~/.config/opencode/context/core/workflows/review.md
+- Delegation → ~/.config/opencode/context/core/workflows/delegation.md
 
 CONSEQUENCE OF SKIPPING: Work that doesn't match project standards = wasted effort + rework
 </critical_context_requirement>
@@ -136,7 +136,7 @@ task(
     
     Edge case - "Context loading vs minimal overhead":
     - @critical_context_requirement (Tier 1) ALWAYS overrides minimal overhead (Tier 3)
-    - Context files (/Users/minhajulhoq/.config/opencode/context/core/*.md) MANDATORY, not optional
+    - Context files (~/.config/opencode/context/core/*.md) MANDATORY, not optional
     - Session files (.tmp/sessions/*) created only when needed
     - Ex: "Write docs" → MUST load standards/docs.md (Tier 1 override)
     - Ex: "Write docs" → Skip ctx for efficiency (VIOLATION)
@@ -175,11 +175,11 @@ task(
       
       1. Classify task: docs|code|tests|delegate|review|patterns|bash-only
       2. Map to context file:
-         - code (write/edit code) → Read /Users/minhajulhoq/.config/opencode/context/core/standards/code.md NOW
-         - docs (write/edit docs) → Read /Users/minhajulhoq/.config/opencode/context/core/standards/docs.md NOW
-         - tests (write/edit tests) → Read /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md NOW
-         - review (code review) → Read /Users/minhajulhoq/.config/opencode/context/core/workflows/review.md NOW
-         - delegate (using task tool) → Read /Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md NOW
+         - code (write/edit code) → Read ~/.config/opencode/context/core/standards/code.md NOW
+         - docs (write/edit docs) → Read ~/.config/opencode/context/core/standards/docs.md NOW
+         - tests (write/edit tests) → Read ~/.config/opencode/context/core/standards/tests.md NOW
+         - review (code review) → Read ~/.config/opencode/context/core/workflows/review.md NOW
+         - delegate (using task tool) → Read ~/.config/opencode/context/core/workflows/delegation.md NOW
          - bash-only → No context needed, proceed to 3.2
       
       3. Apply context:
@@ -187,11 +187,11 @@ task(
          IF direct: Use Read tool to load context file, then proceed to 3.2
       
       <automatic_loading>
-        IF code task → /Users/minhajulhoq/.config/opencode/context/core/standards/code.md (MANDATORY)
-        IF docs task → /Users/minhajulhoq/.config/opencode/context/core/standards/docs.md (MANDATORY)
-        IF tests task → /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md (MANDATORY)
-        IF review task → /Users/minhajulhoq/.config/opencode/context/core/workflows/review.md (MANDATORY)
-        IF delegation → /Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md (MANDATORY)
+        IF code task → ~/.config/opencode/context/core/standards/code.md (MANDATORY)
+        IF docs task → ~/.config/opencode/context/core/standards/docs.md (MANDATORY)
+        IF tests task → ~/.config/opencode/context/core/standards/tests.md (MANDATORY)
+        IF review task → ~/.config/opencode/context/core/workflows/review.md (MANDATORY)
+        IF delegation → ~/.config/opencode/context/core/workflows/delegation.md (MANDATORY)
         IF bash-only → No context required
         
         WHEN DELEGATING TO SUBAGENTS:
@@ -302,7 +302,7 @@ task(
     </route>
   </specialized_routing>
   
-  <process ref="/Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md">Full delegation template & process</process>
+  <process ref="~/.config/opencode/context/core/workflows/delegation.md">Full delegation template & process</process>
 </delegation_rules>
 
 <principles>
@@ -315,14 +315,14 @@ task(
 </principles>
 
 <static_context>
-  Context index: /Users/minhajulhoq/.config/opencode/context/index.md
+  Context index: ~/.config/opencode/context/index.md
   
   Load index when discovering contexts by keywords. For common tasks:
-  - Code tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/code.md
-  - Docs tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/docs.md  
-  - Tests tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md
-  - Review tasks → /Users/minhajulhoq/.config/opencode/context/core/workflows/review.md
-  - Delegation → /Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md
+  - Code tasks → ~/.config/opencode/context/core/standards/code.md
+  - Docs tasks → ~/.config/opencode/context/core/standards/docs.md  
+  - Tests tasks → ~/.config/opencode/context/core/standards/tests.md
+  - Review tasks → ~/.config/opencode/context/core/workflows/review.md
+  - Delegation → ~/.config/opencode/context/core/workflows/delegation.md
   
   Full index includes all contexts with triggers and dependencies.
   Context files loaded per @critical_context_requirement.

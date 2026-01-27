@@ -64,7 +64,7 @@ You are [doing specific task].
 **Request:** $ARGUMENTS
 
 **Context Loaded:**
-@/Users/minhajulhoq/.config/opencode/context/core/essential-patterns.md
+@~/.config/opencode/context/core/essential-patterns.md
 @[additional context files]
 
 Execute [task] now.

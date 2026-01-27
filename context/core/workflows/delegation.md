@@ -42,9 +42,9 @@ Status: in_progress
 - {file 4} - {purpose}
 
 ## Static Context Available
-- /Users/minhajulhoq/.config/opencode/context/core/standards/code.md (for code quality)
-- /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md (for test requirements)
-- /Users/minhajulhoq/.config/opencode/context/core/{standards|workflows}/{other-relevant}.md
+- ~/.config/opencode/context/core/standards/code.md (for code quality)
+- ~/.config/opencode/context/core/standards/tests.md (for test requirements)
+- ~/.config/opencode/context/core/{standards|workflows}/{other-relevant}.md
 
 ## Constraints/Notes
 {Important context, preferences, compatibility}

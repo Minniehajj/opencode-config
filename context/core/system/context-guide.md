@@ -6,7 +6,7 @@
 
 **Key Principle**: Use context index for discovery, load specific files as needed
 
-**Index Location**: `/Users/minhajulhoq/.config/opencode/context/index.md` - Quick map of all contexts
+**Index Location**: `~/.config/opencode/context/index.md` - Quick map of all contexts
 
 **Structure**: standards/ (quality + analysis), workflows/ (process + review), system/ (internals)
 
@@ -20,7 +20,7 @@ Context files provide guidelines and templates for specific tasks. Use the index
 
 ## Context Index System
 
-**Central Index**: `/Users/minhajulhoq/.config/opencode/context/index.md` - Ultra-compact map of all contexts
+**Central Index**: `~/.config/opencode/context/index.md` - Ultra-compact map of all contexts
 
 The index provides:
 - Quick map for common tasks (code, docs, tests, review, delegation)
@@ -30,7 +30,7 @@ The index provides:
 
 ### Available Context Files
 
-All files are in `/Users/minhajulhoq/.config/opencode/context/core/` with organized subfolders:
+All files are in `~/.config/opencode/context/core/` with organized subfolders:
 
 ### Standards (Quality Guidelines + Analysis)
 - `standards/code.md` - Modular, functional code principles [critical]
@@ -53,7 +53,7 @@ All files are in `/Users/minhajulhoq/.config/opencode/context/core/` with organi
 - Review task? → Load `workflows/review.md`
 
 **Step 2: Load Index** (for keyword matching)
-- Load `/Users/minhajulhoq/.config/opencode/context/index.md`
+- Load `~/.config/opencode/context/index.md`
 - Scan triggers to find relevant contexts
 - Load specific context files as needed
 
@@ -69,48 +69,48 @@ All files are in `/Users/minhajulhoq/.config/opencode/context/core/` with organi
 
 ## When to Use Each File
 
-### /Users/minhajulhoq/.config/opencode/context/core/standards/code.md
+### ~/.config/opencode/context/core/standards/code.md
 - Writing new code
 - Modifying existing code
 - Following modular/functional patterns
 - Making architectural decisions
 
-### /Users/minhajulhoq/.config/opencode/context/core/standards/docs.md
+### ~/.config/opencode/context/core/standards/docs.md
 - Writing README files
 - Creating API documentation
 - Adding code comments
 
-### /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md
+### ~/.config/opencode/context/core/standards/tests.md
 - Writing new tests
 - Running test suites
 - Debugging test failures
 
-### /Users/minhajulhoq/.config/opencode/context/core/standards/patterns.md
+### ~/.config/opencode/context/core/standards/patterns.md
 - Error handling
 - Security patterns
 - Common code patterns
 
-### /Users/minhajulhoq/.config/opencode/context/core/standards/analysis.md
+### ~/.config/opencode/context/core/standards/analysis.md
 - Analyzing codebase patterns
 - Investigating bugs
 - Evaluating architecture
 
-### /Users/minhajulhoq/.config/opencode/context/core/workflows/delegation.md
+### ~/.config/opencode/context/core/workflows/delegation.md
 - Delegating to general agent
 - Creating task context
 - Multi-file coordination
 
-### /Users/minhajulhoq/.config/opencode/context/core/workflows/task-breakdown.md
+### ~/.config/opencode/context/core/workflows/task-breakdown.md
 - Tasks with 4+ files
 - Estimated effort >60 minutes
 - Complex dependencies
 
-### /Users/minhajulhoq/.config/opencode/context/core/workflows/sessions.md
+### ~/.config/opencode/context/core/workflows/sessions.md
 - Session lifecycle
 - Cleanup procedures
 - Session isolation
 
-### /Users/minhajulhoq/.config/opencode/context/core/workflows/review.md
+### ~/.config/opencode/context/core/workflows/review.md
 - Reviewing code
 - Conducting code audits
 - Providing PR feedback
@@ -143,8 +143,8 @@ Status: in_progress
 - {file 1} - {purpose}
 
 ## Static Context Available
-- /Users/minhajulhoq/.config/opencode/context/core/standards/code.md
-- /Users/minhajulhoq/.config/opencode/context/core/standards/tests.md
+- ~/.config/opencode/context/core/standards/code.md
+- ~/.config/opencode/context/core/standards/tests.md
 
 ## Constraints/Notes
 {Important context}

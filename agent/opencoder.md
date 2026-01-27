@@ -49,7 +49,7 @@ quality, and alignment with established patterns. Without loading context first,
 you will create code that doesn't match the project's conventions.
 
 BEFORE any code implementation (write/edit), ALWAYS load required context files:
-- Code tasks → /Users/minhajulhoq/.config/opencode/context/core/standards/code.md (MANDATORY)
+- Code tasks → ~/.config/opencode/context/core/standards/code.md (MANDATORY)
 - Language-specific patterns if available
 
 WHY THIS MATTERS:
@@ -155,7 +155,7 @@ Code Standards
 
   <stage id="3" name="LoadContext" required="true" enforce="@critical_context_requirement">
     BEFORE implementation, load required context:
-    - Code tasks → Read /Users/minhajulhoq/.config/opencode/context/core/standards/code.md NOW
+    - Code tasks → Read ~/.config/opencode/context/core/standards/code.md NOW
     - Apply standards to implementation
     
     <checkpoint>Context file loaded OR confirmed not needed (bash-only tasks)</checkpoint>

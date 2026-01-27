@@ -166,7 +166,7 @@ cd OpenAgents
 mkdir -p ~/.opencode
 cp -r .opencode/agent ~/.opencode/
 cp -r .opencode/command ~/.opencode/
-cp -r /Users/minhajulhoq/.config/opencode/context ~/.opencode/
+cp -r ~/.config/opencode/context ~/.opencode/
 ```
 
 ### Step 3: Start Building
@@ -221,7 +221,7 @@ User Request
 5. **Quality checks** run automatically (tests, types, linting)
 6. **Subagents handle** specialized tasks (testing, review, docs)
 
-**Context-aware:** Agents automatically load patterns from `/Users/minhajulhoq/.config/opencode/context/` to follow your coding standards.
+**Context-aware:** Agents automatically load patterns from `~/.config/opencode/context/` to follow your coding standards.
 
 ---
 
@@ -312,7 +312,7 @@ git add .
 
 ````bash
 # Edit your project context
-nano ~//Users/minhajulhoq/.config/opencode/context/project/project-context.md
+nano ~/.config/opencode/context/project/project-context.md
 
 # Add your patterns:
 # **API Endpoint Pattern:**
@@ -414,7 +414,7 @@ A: No, they're optional. Only install if you want Gemini AI features.
 A: Global (`~/.opencode/`) works for most. Project-specific (`.opencode/`) if you need different configs per project.
 
 **Q: How do I add my own coding patterns?**  
-A: Edit `~//Users/minhajulhoq/.config/opencode/context/project/project-context.md` - agents automatically load this file.
+A: Edit `~/.config/opencode/context/project/project-context.md` - agents automatically load this file.
 
 **Q: What languages are supported?**  
 A: The agents work with any language (TypeScript, Python, Go, Rust, etc.) and adapt based on your project files.

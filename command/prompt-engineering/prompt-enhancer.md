@@ -173,10 +173,10 @@ description: "Research-backed prompt optimizer applying Stanford/Anthropic patte
         5. Recalculate ratio, target 40-50%
       </process>
       <extraction_candidates>
-        <session_management>Extract to /Users/minhajulhoq/.config/opencode/context/core/session-management.md</session_management>
-        <context_discovery>Extract to /Users/minhajulhoq/.config/opencode/context/core/context-discovery.md</context_discovery>
-        <detailed_examples>Extract to /Users/minhajulhoq/.config/opencode/context/core/examples.md</detailed_examples>
-        <implementation_specs>Extract to /Users/minhajulhoq/.config/opencode/context/core/specifications.md</implementation_specs>
+        <session_management>Extract to ~/.config/opencode/context/core/session-management.md</session_management>
+        <context_discovery>Extract to ~/.config/opencode/context/core/context-discovery.md</context_discovery>
+        <detailed_examples>Extract to ~/.config/opencode/context/core/examples.md</detailed_examples>
+        <implementation_specs>Extract to ~/.config/opencode/context/core/specifications.md</implementation_specs>
       </extraction_candidates>
       <checkpoint>Instruction ratio 40-50%, external references created, functionality preserved</checkpoint>
     </stage>
@@ -364,7 +364,7 @@ description: "Research-backed prompt optimizer applying Stanford/Anthropic patte
         6. **Modular Design**: Extracted N sections to references
         
         ### Files Created (if applicable)
-        - `/Users/minhajulhoq/.config/opencode/context/core/[name].md` - [description]
+        - `~/.config/opencode/context/core/[name].md` - [description]
         
         ---
         
@@ -379,7 +379,7 @@ description: "Research-backed prompt optimizer applying Stanford/Anthropic patte
         **Deployment Readiness**: Ready | Needs Testing | Requires Customization
         
         **Required Context Files** (if any):
-        - `/Users/minhajulhoq/.config/opencode/context/core/[file].md`
+        - `~/.config/opencode/context/core/[file].md`
         
         **Breaking Changes**: None | [List if any]
         
@@ -478,7 +478,7 @@ description: "Research-backed prompt optimizer applying Stanford/Anthropic patte
 
 
 <references>
-  <optimization_report ref="/Users/minhajulhoq/.config/opencode/context/core/prompt-optimization-report.md">
+  <optimization_report ref="~/.config/opencode/context/core/prompt-optimization-report.md">
     Detailed before/after metrics from OpenAgent optimization
   </optimization_report>
   <research_patterns ref="docs/agents/research-backed-prompt-design.md">
