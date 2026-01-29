@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "default_agent": "openagent",
+  "default_agent": "OpenAgent",
   "mcp": {
     "JIRA": {
       "enabled": false,
