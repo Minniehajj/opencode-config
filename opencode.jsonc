@@ -1,4 +1,18 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "openagent",
+  "mcp": {
+    "JIRA": {
+      "enabled": false,
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "oauth": {},
+    },
+    "Figma": {
+      "enabled": false,
+      "type": "remote",
+      "url": "https://mcp.figma.com/mcp",
+      "oauth": {},
+    },
+  },
 }

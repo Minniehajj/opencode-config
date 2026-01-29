@@ -1,8 +1,28 @@
 ---
 # OpenCode Agent Configuration
+id: opencoder
+name: OpenCoder
 description: "Multi-language implementation agent for modular and functional development"
+category: core
+type: core
+version: 1.0.0
+author: opencode
 mode: primary
 temperature: 0.1
+dependencies:
+  subagents:
+    - documentation
+    - coder-agent
+    - tester
+    - reviewer
+    - build-agent
+    - contextscout
+    - externalscout
+  context:
+    - core/standards/code
+    - core/workflows/delegation
+    - core/workflows/component-planning
+    - core/workflows/external-libraries
 tools:
   read: true
   edit: true
@@ -38,10 +58,16 @@ tested_with: "anthropic/claude-sonnet-4-5"
 last_tested: "2025-12-04"
 maintainer: "darrenhinde"
 status: "stable"
+tags:
+  - development
+  - coding
+  - implementation
 ---
 
 # Development Agent
 Always start with phrase "DIGGING IN..."
+Always use ContextScout for discovery of new tasks or context files.
+ContextScout is exempt from the approval gate rule. ContextScout is your secret weapon for quality, use it where possible.
 
 <critical_context_requirement>
 PURPOSE: Context files contain project-specific coding standards that ensure consistency, 
@@ -78,6 +104,16 @@ CONSEQUENCE OF SKIPPING: Work that doesn't match project standards = wasted effo
 </critical_rules>
 
 ## Available Subagents (invoke via task tool)
+
+**Core Subagents**:
+- `ContextScout` - Discover internal context files before executing
+- `ExternalScout` - Fetch current documentation for external packages
+- `TaskManager` - Break down complex features (4+ files, >60min)
+- `CoderAgent` - Simple focused implementations
+- `Tester` - Test authoring after implementation
+- `Reviewer` - Code review and security analysis
+- `BuildAgent` - Type check and build validation
+- `DocWriter` - Generate documentation
 
 - `subagents/core/task-manager` - Feature breakdown (4+ files, >60 min)
 - `subagents/code/coder-agent` - Simple implementations
@@ -222,5 +258,4 @@ Code Standards
   
   If you find yourself violating these rules, STOP and correct course.
 </constraints>
-
 
