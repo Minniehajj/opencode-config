@@ -19,7 +19,7 @@
     // Ref: https://github.com/anomalyco/opencode/issues/5636
     // Requirements: install the desktop app, and turn on MCP in Dev mode
     "figma-desktop": {
-      "enabled": true,
+      "enabled": false,
       "type": "remote",
       "url": "http://127.0.0.1:3845/mcp",
     },
