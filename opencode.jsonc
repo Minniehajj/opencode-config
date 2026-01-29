@@ -14,5 +14,14 @@
       "url": "https://mcp.figma.com/mcp",
       "oauth": {},
     },
+    // Of note, as of Nov 17, 2025, FIGMA has locked down oauth based MCP usage, so this desktop version is allowed for now
+    // Opencode maintainers are getting access from FIGMA for their MCP, but until that is approved, use this instead
+    // Ref: https://github.com/anomalyco/opencode/issues/5636
+    // Requirements: install the desktop app, and turn on MCP in Dev mode
+    "figma-desktop": {
+      "enabled": true,
+      "type": "remote",
+      "url": "http://127.0.0.1:3845/mcp",
+    },
   },
 }
